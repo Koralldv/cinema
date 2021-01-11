@@ -1,0 +1,53 @@
+.filmList .filmItem .filmItemInner {
+  height: 300px;
+  margin: 25px 0px;
+  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.04);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.filmList .filmItem .filmItemInner img {
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 100%;
+  height: 70%;
+}
+.filmList .filmItem .filmItemInner .filmItemInfo {
+  padding: 20px 10px;
+  position: relative;
+}
+.filmList .filmItem .filmItemInner .filmItemInfo span {
+  font-size: 20px;
+  font-family: "Helvetica Neue";
+  color: #242b2d;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.filmList .filmItem .filmItemInner .filmItemInfo ul {
+  display: flex;
+  justify-content: start;
+  justify-items: center;
+  margin: 12px 0px 0px 0px;
+}
+.filmList .filmItem .filmItemInner .filmItemInfo ul li {
+  margin-right: 10px;
+  font-size: 14px;
+  font-family: "HelveticaNeueCyr";
+  font-weight: 500;
+  color: #0aaee4;
+}
+.filmList .filmItem .filmItemInner .filmItemInfo .rating {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #0aaee4;
+  border-radius: 5px;
+  border: 1px solid #0aaee4;
+  padding: 3px 5px;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "HelveticaNeueCyr";
+}
+.filmList .filmItem-solo {
+  flex: 0 0 100%;
+  max-width: 100%;
+}

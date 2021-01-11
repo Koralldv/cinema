@@ -1,0 +1,37 @@
+.categoriesList { 
+    margin: 40px auto;
+    width: 1440px;
+    .categoriesBlock {
+        display: flex;
+        justify-content: space-between;
+        .categList {
+            margin-left: -50px;
+            width: 700px;
+            display: flex;
+            justify-content: space-around;
+            justify-items: center;
+            font-size: 17px;
+            .categItem {
+                font-family: 'HelveticaNeueCyr';
+                color: #0aaee4;
+                cursor: pointer;
+                // transition: 5s;
+            }
+
+            .categItem-Active {
+                font-family: 'Helvetica Neue';
+                border-bottom: 3px solid #0aaee4;
+                padding-bottom: 10px;
+            }
+        }
+        .tabsList {
+            span {
+                background-color: red;
+                width: 15px;
+                display: inline-block;                                                         
+                height: 25px;
+                margin: 5px ;
+            }
+        }
+    }
+}

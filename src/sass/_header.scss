@@ -1,5 +1,8 @@
 .header {
     margin: 0 auto;
+    -webkit-box-shadow: 0px 0px 100px 43px rgba(34, 60, 80, 0.62) inset;
+    -moz-box-shadow: 0px 0px 100px 43px rgba(34, 60, 80, 0.62) inset;
+    box-shadow: 0px 0px 100px 43px rgba(34, 60, 80, 0.62) inset;
     .headerInner {
         width: 100%;
         display: flex;
