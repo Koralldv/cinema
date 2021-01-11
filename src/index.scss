@@ -1,0 +1,50 @@
+@import "../node_modules/bootstrap/scss/bootstrap-grid";
+
+@import "./sass/reset.css";
+@import "./sass/navbar";
+@import "./sass/header";
+@import "./sass/search";
+@import "./sass/fonts/stylesheet.css";
+
+@font-face {
+    font-family: TCB;
+    /* Имя шрифта */
+    src: url(./sass/fonts/TCB_____.TTF);
+    /* Путь к файлу со шрифтом */
+}
+
+// .navbar {
+//     position: fixed;
+//     top: 0px;
+//     left: 0px;
+//     z-index: 99;
+//     width: 100%;
+//     background-color: rgba(0,0,0,0) !important;
+// }
+
+.mr-20{
+    margin-right: 20px;
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+.swiper {
+    height: 100vh;
+}
+
+.swiper .header {
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100vw;
+    height: 100%;
+}
+
+.swiper-pagination-bullet {
+    width: 6px !important;
+    height: 25px !important;
+    border-radius: 5px !important;
+    background-color: #0aaee4 !important;
+    margin-right: 50px !important;
+}

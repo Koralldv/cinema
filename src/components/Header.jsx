@@ -1,0 +1,122 @@
+import React from 'react';
+
+import SwiperCore, { Pagination } from 'swiper';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+import MdStar from 'react-ionicons/lib/MdStar';
+
+// Import Swiper styles
+import 'swiper/swiper.scss';
+import 'swiper/components/pagination/pagination.scss';
+
+import { Navbar } from './Navbar';
+
+SwiperCore.use([Pagination]);
+
+function Header({ announc }) {
+    return (
+        <div className="">
+            <Navbar />
+            <Swiper
+                spaceBetween={0}
+                slidesPerView={1}
+                direction="vertical"
+                className="swiper"
+                pagination={{ clickable: true }}>
+                {announc.map((item, index) => {
+                    return (
+                        <SwiperSlide key={`${item}_${index}`}>
+                            <div
+                                className="header"
+                                style={{
+                                    backgroundImage: `url('${item.img}')`,
+                                }}>
+                                <div className="headerInner">
+                                    <div className="infoFilm">
+                                        <h2>{item.title}</h2>
+                                        <ul className="typeFilm">
+                                            {item.categories.map((itemCat, index) => (
+                                                <li key={`${item}_${index}`}>{itemCat}</li>
+                                            ))}
+                                            <span className="longFilm">{item.timing}</span>
+                                        </ul>
+                                        <MdStar
+                                            className="headerStar"
+                                            color="#0aaee4"
+                                            fontSize="36px"
+                                        />
+                                        <MdStar
+                                            className="headerStar"
+                                            color="#0aaee4"
+                                            fontSize="36px"
+                                        />
+                                        <MdStar
+                                            className="headerStar"
+                                            color="#0aaee4"
+                                            fontSize="36px"
+                                        />
+                                        <MdStar
+                                            className="headerStar"
+                                            color="#0aaee4"
+                                            fontSize="36px"
+                                        />
+                                        <MdStar
+                                            className="headerStar"
+                                            color="#0aaee4"
+                                            fontSize="36px"
+                                        />
+                                        <span className="rateFilm">{item.stars}</span>
+                                    </div>
+                                    <div className="navBut">
+                                        <button className="btn btn-col">Whatch Now</button>
+                                        <button className="btn btn-bor">View Info</button>
+                                        <button className="btn btn-emp">+ Favorites</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                    );
+                })}
+                {/* 
+                <SwiperSlide>
+                    <div className="header">
+                        <div className="headerInner">
+                            <div className="infoFilm">
+                                <h2>The Jungle Book</h2>
+                                <ul className="typeFilm">
+                                    <li>Adventure</li>
+                                    <li>Drama</li>
+                                    <li>Family</li>
+                                    <li>Fantasy</li>
+                                    <span className="longFilm">1h 46m</span>
+                                </ul>
+                                <MdStar className="headerStar" color="#0aaee4" fontSize="36px" />
+                                <MdStar className="headerStar" color="#0aaee4" fontSize="36px" />
+                                <MdStar className="headerStar" color="#0aaee4" fontSize="36px" />
+                                <MdStar className="headerStar" color="#0aaee4" fontSize="36px" />
+                                <MdStar className="headerStar" color="#0aaee4" fontSize="36px" />
+                                <span className="rateFilm">4.8</span>
+                            </div>
+                            <div className="navBut">
+                                <button className="btn btn-col">Whatch Now</button>
+                                <button className="btn btn-bor">View Info</button>
+                                <button className="btn btn-emp">+ Favorites</button>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="header">2</div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="header">3</div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="header">4</div>
+                </SwiperSlide> */}
+            </Swiper>
+        </div>
+    );
+}
+
+export default Header;

@@ -1,0 +1,64 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    justify-content:space-between;
+    position: fixed;
+    top: 20px;
+    left: 0px;
+    z-index: 999;
+    margin: 0px auto;
+    padding: 0px 10%;
+}
+
+.brand{
+    font-size: 50px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: TCB;
+}
+
+.btn {
+    color: #fff;
+    border: 0px;
+    border-radius: 6px;
+    padding: 15px 30px;
+    margin: 5px 5px;
+    background-color: transparent;
+    font-family: HelveticaNeueCyr;
+    cursor: pointer;
+    position: relative;
+    .btn-search-icon {
+        position: absolute;
+        left: -5px;
+        top: 12px;
+
+    }
+}
+
+.btn-emp:hover,
+.btn-search:hover {
+    transform: scale(1.1);
+    transition: transform .3s;
+}
+
+.btn-col {
+    background-color: #0aaee4;
+}
+
+.btn-col:hover {
+    transform: scale(1.1);
+    transition: transform .3s;
+}
+
+.btn-bor {
+    border: 2px solid #fff;
+    margin-left: 40px; 
+}
+
+.btn-bor:hover { 
+    background-color: #0aaee4;
+    transition: .3s;
+}

@@ -1,0 +1,32 @@
+.searchBlock {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    .searchInner {
+        position: relative;
+        width: 700px;
+        margin: 20% auto 0px auto;
+        .searchInp {
+            position: absolute;
+            width: 700px;
+            height: 50px;
+            font-size: 20px;
+            border: 2px solid #0aaee4;
+            background-color: rgba(255, 255, 255, .7);
+            border-radius: 5px;
+            padding: 5px 5px;
+            outline: none;
+        }
+        .close {
+            position: absolute;
+            z-index: 999;
+            right: -35px;
+            top: -35px;
+            cursor: pointer;
+        }
+    }
+}
