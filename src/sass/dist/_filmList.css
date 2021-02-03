@@ -4,38 +4,118 @@
   box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.04);
   border-radius: 5px;
   overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
-.filmList .filmItem .filmItemInner img {
+.filmList .filmItem .filmItemInner .filmItemInner___bg {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.filmList .filmItem .filmItemInner .filmItemTop {
+  position: relative;
+  width: 100%;
+  height: 70%;
+  text-align: center;
+}
+.filmList .filmItem .filmItemInner .filmItemTop .watch {
+  display: block;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  margin-left: -36px;
+  color: #fff;
+  font-family: "HelveticaNeueCyr";
+  font-weight: 400;
+  font-size: 14px;
+}
+.filmList .filmItem .filmItemInner .filmItemTop .play {
+  margin: 5px auto;
+  position: absolute;
+  top: 36px;
+  left: 50%;
+  margin-left: -19px;
+  background-color: #0aaee4;
+  padding: 15px;
+  padding: 12px 8px 8px 12px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.filmList .filmItem .filmItemInner .filmItemTop .btn {
+  position: absolute;
+  top: 64%;
+  left: 50%;
+  margin-left: -60px;
+}
+.filmList .filmItem .filmItemInner .filmItemTop .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.filmList .filmItem .filmItemInner .filmItemTop .mask:hover {
+  opacity: 1;
+}
+.filmList .filmItem .filmItemInner .filmItemTop img {
   background-repeat: no-repeat;
   object-fit: cover;
   width: 100%;
-  height: 70%;
+  height: 100%;
+}
+.filmList .filmItem .filmItemInner .filmItemInfo__active {
+  padding: 20px 20px;
+  position: relative;
+}
+.filmList .filmItem .filmItemInner .filmItemInfo__active .span {
+  font-size: 20px;
+  font-family: "Helvetica Neue";
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 .filmList .filmItem .filmItemInner .filmItemInfo {
   padding: 20px 10px;
   position: relative;
 }
-.filmList .filmItem .filmItemInner .filmItemInfo span {
+.filmList .filmItem .filmItemInner .span {
   font-size: 20px;
   font-family: "Helvetica Neue";
   color: #242b2d;
   font-weight: bold;
   text-transform: uppercase;
 }
-.filmList .filmItem .filmItemInner .filmItemInfo ul {
+.filmList .filmItem .filmItemInner .span__active {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Helvetica Neue";
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.filmList .filmItem .filmItemInner .listCat {
   display: flex;
   justify-content: start;
   justify-items: center;
   margin: 12px 0px 0px 0px;
 }
-.filmList .filmItem .filmItemInner .filmItemInfo ul li {
+.filmList .filmItem .filmItemInner .listCat li {
   margin-right: 10px;
   font-size: 14px;
   font-family: "HelveticaNeueCyr";
   font-weight: 500;
   color: #0aaee4;
 }
-.filmList .filmItem .filmItemInner .filmItemInfo .rating {
+.filmList .filmItem .filmItemInner .rating {
   position: absolute;
   right: 20px;
   top: 20px;
@@ -46,6 +126,24 @@
   font-weight: 400;
   font-size: 16px;
   font-family: "HelveticaNeueCyr";
+}
+.filmList .filmItem .filmItemInner .info__off {
+  margin: 10px 0px 0px 10px;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+}
+.filmList .filmItem .filmItemInner .info__about {
+  font-size: 15px;
+  color: #ffffff;
+  font-family: "Helvetica Neue";
+  font-weight: 100;
+  padding: 0px 20px 10px 20px;
+  z-index: 1;
+  position: relative;
+}
+.filmList .filmItem .filmItemInner .btn {
+  margin: 10px 20px;
 }
 .filmList .filmItem-solo {
   flex: 0 0 100%;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SwiperCore, { Pagination } from 'swiper';
+import SwiperCore, { Pagination, Autoplay } from 'swiper';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import MdStar from 'react-ionicons/lib/MdStar';
@@ -12,16 +12,21 @@ import 'swiper/components/pagination/pagination.scss';
 import { Navbar } from './Navbar';
 
 SwiperCore.use([Pagination]);
+SwiperCore.use([Autoplay]);
 
 function Header({ announc }) {
     return (
-        <div className="">
+        <div>
             <Navbar />
             <Swiper
                 spaceBetween={0}
                 slidesPerView={1}
                 direction="vertical"
                 className="swiper"
+                autoplay={{
+                    delay: 1500,
+                    disableOnInteraction: true,
+                }}
                 pagination={{ clickable: true }}>
                 {announc.map((item, index) => {
                     return (
@@ -42,27 +47,27 @@ function Header({ announc }) {
                                         </ul>
                                         <MdStar
                                             className="headerStar"
-                                            color="#0aaee4"
+                                            color="#a69df5"
                                             fontSize="36px"
                                         />
                                         <MdStar
                                             className="headerStar"
-                                            color="#0aaee4"
+                                            color="#a69df5"
                                             fontSize="36px"
                                         />
                                         <MdStar
                                             className="headerStar"
-                                            color="#0aaee4"
+                                            color="#a69df5"
                                             fontSize="36px"
                                         />
                                         <MdStar
                                             className="headerStar"
-                                            color="#0aaee4"
+                                            color="#a69df5"
                                             fontSize="36px"
                                         />
                                         <MdStar
                                             className="headerStar"
-                                            color="#0aaee4"
+                                            color="#a69df5"
                                             fontSize="36px"
                                         />
                                         <span className="rateFilm">{item.stars}</span>

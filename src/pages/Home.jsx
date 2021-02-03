@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Navbar, Header, CategoriesList, FilmList } from '../components/';
+import { Header, CategoriesList, FilmList, Footer } from '../components/';
 
 const announc = [
     {
@@ -10,6 +10,8 @@ const announc = [
         categories: ['Adventure', 'Drama', 'Family', 'Fantasy'],
         timing: '1h 46m',
         stars: '4.8',
+        about:
+            'There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found. ',
     },
     {
         id: 228,
@@ -29,7 +31,7 @@ const announc = [
     },
     {
         id: 4234,
-        title: 'Hueta',
+        title: 'Скуби Дуби Ду',
         img: 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg',
         categories: ['Adventure', 'Drama', 'Family', 'Fantasy'],
         timing: '1h 20m',
@@ -54,7 +56,7 @@ const filmList = [
         rating: 4.2,
         categories: ['Adventure', 'Drama', 'Family'],
         description:
-            'There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found. ',
+            'There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers.',
     },
     {
         id: 123,
@@ -63,7 +65,7 @@ const filmList = [
         rating: 4.2,
         categories: ['Adventure', 'Drama', 'Family'],
         description:
-            'There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found. ',
+            'There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers.',
     },
     {
         id: 123,
@@ -72,7 +74,7 @@ const filmList = [
         rating: 4.2,
         categories: ['Adventure', 'Drama', 'Family'],
         description:
-            'There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found. ',
+            'There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers.',
     },
     {
         id: 123,
@@ -81,7 +83,7 @@ const filmList = [
         rating: 4.2,
         categories: ['Adventure', 'Drama', 'Family'],
         description:
-            'There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found. ',
+            'There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers.',
     },
     {
         id: 123,
@@ -90,7 +92,7 @@ const filmList = [
         rating: 4.2,
         categories: ['Adventure', 'Drama', 'Family'],
         description:
-            'There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found. ',
+            'There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers.',
     },
     {
         id: 123,
@@ -99,7 +101,7 @@ const filmList = [
         rating: 4.2,
         categories: ['Adventure', 'Drama', 'Family'],
         description:
-            'There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found. ',
+            'There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers.',
     },
     {
         id: 123,
@@ -108,7 +110,7 @@ const filmList = [
         rating: 4.2,
         categories: ['Adventure', 'Drama', 'Family'],
         description:
-            'There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found. ',
+            'There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers.',
     },
     {
         id: 123,
@@ -117,7 +119,7 @@ const filmList = [
         rating: 4.2,
         categories: ['Adventure', 'Drama', 'Family'],
         description:
-            'There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found. ',
+            'There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers.',
     },
     {
         id: 123,
@@ -126,7 +128,7 @@ const filmList = [
         rating: 4.2,
         categories: ['Adventure', 'Drama', 'Family'],
         description:
-            'There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found. ',
+            'There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers.',
     },
     {
         id: 123,
@@ -135,7 +137,7 @@ const filmList = [
         rating: 4.2,
         categories: ['Adventure', 'Drama', 'Family'],
         description:
-            'There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found. ',
+            'There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers.',
     },
     {
         id: 123,
@@ -144,13 +146,13 @@ const filmList = [
         rating: 4.2,
         categories: ['Adventure', 'Drama', 'Family'],
         description:
-            'There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found. ',
+            'There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers.',
     },
 ];
 
 const solo = {
     flex: '0 0 100%',
-    maxWidth: '100%',
+    maxWidth: '50%',
 };
 
 const all = {};
@@ -160,10 +162,13 @@ export const Home = () => {
     return (
         <React.Fragment>
             <Header announc={announc}></Header>
-            <div className="categoriesList container">
-                <CategoriesList categoriesList={categoriesList} soloFilmSet={soloFilmSet} />
-                <FilmList filmList={filmList} solo={soloFilm === true ? solo : all} />
+            <div className="bg">
+                <div className="categoriesList container">
+                    <CategoriesList categoriesList={categoriesList} soloFilmSet={soloFilmSet} />
+                    <FilmList filmList={filmList} solo={soloFilm === true ? solo : all} />
+                </div>
             </div>
+            <Footer />
         </React.Fragment>
     );
 };

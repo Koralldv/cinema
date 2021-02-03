@@ -24,6 +24,9 @@
   border-bottom: 3px solid #0aaee4;
   padding-bottom: 10px;
 }
+.categoriesList .categoriesBlock .tabsList {
+  cursor: pointer;
+}
 .categoriesList .categoriesBlock .tabsList span {
   background-color: red;
   width: 15px;

@@ -4,11 +4,15 @@
     justify-items: center;
     justify-content:space-between;
     position: fixed;
-    top: 20px;
+    top: 0px;
     left: 0px;
     z-index: 999;
     margin: 0px auto;
-    padding: 0px 10%;
+    padding: 20px 10%;
+}
+
+.navbarFixed {
+    background-color: #a69df5;
 }
 
 .brand{
@@ -24,7 +28,7 @@
     color: #fff;
     border: 0px;
     border-radius: 6px;
-    padding: 15px 30px;
+    padding: 12px 30px;
     margin: 5px 5px;
     background-color: transparent;
     font-family: HelveticaNeueCyr;
@@ -45,7 +49,7 @@
 }
 
 .btn-col {
-    background-color: #0aaee4;
+    background-color: $main;
 }
 
 .btn-col:hover {
@@ -59,6 +63,6 @@
 }
 
 .btn-bor:hover { 
-    background-color: #0aaee4;
+    background-color: $main;
     transition: .3s;
 }

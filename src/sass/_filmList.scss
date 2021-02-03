@@ -6,47 +6,148 @@
             box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.04);
             border-radius: 5px;
             overflow: hidden;
-            img {
-                background-repeat: no-repeat;
-                object-fit: cover;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            .filmItemInner___bg {
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.25);
+                z-index: 0;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+            }
+            .filmItemTop {
+                position: relative;
                 width: 100%;
                 height: 70%;
+                text-align: center;
+                .watch {
+                    display: block;
+                    position: absolute;
+                    top: 48%;
+                    left: 50%;
+                    margin-left: -36px;
+                    color: #fff;
+                    font-family: 'HelveticaNeueCyr';
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+                .play {
+                    margin: 5px auto;
+                    position: absolute;
+                    top: 36px;
+                    left: 50%;
+                    margin-left: -19px;
+                    background-color: $main;
+                    padding: 15px;
+                    padding: 12px 8px 8px 12px;
+                    text-align: center;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+                .btn {
+                    position: absolute;
+                    top: 64%;
+                    left: 50%;
+                    margin-left: -60px;
+                }
+                .mask {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: rgba(0, 0, 0, .5);
+                    opacity: 0;
+                    transition: .2s;
+                    cursor: pointer;
+                }
+                .mask:hover {
+                    opacity: 1;
+                }
+                img {
+                    background-repeat: no-repeat;
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .filmItemInfo__active {
+                padding: 20px 20px;
+                position: relative;
+                .span {
+                    font-size: 20px;
+                    font-family: "Helvetica Neue";
+                    color: #ffffff;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
             }
             .filmItemInfo {
                 padding: 20px 10px;
-                position: relative;
-            span {
+                position: relative;        
+            }
+            .span {
                 font-size: 20px;
                 font-family: "Helvetica Neue";
                 color: rgb(36, 43, 45);
                 font-weight: bold;
                 text-transform: uppercase;
             }
-            ul {
+
+            .span__active {
+                color: #ffffff;
+                font-size: 20px;
+                font-family: "Helvetica Neue";
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            .listCat {
                 display: flex;
                 justify-content: start;
                 justify-items: center;
                 margin: 12px 0px 0px 0px;
-                li{
+
+                li {
                     margin-right: 10px;
                     font-size: 14px;
                     font-family: 'HelveticaNeueCyr';
                     font-weight: 500;
-                    color: #0aaee4;
+                    color: $main;
                 }
+            
             }
-            .rating{
+            .rating {
                 position: absolute;
                 right: 20px;
                 top: 20px;
-                color: #0aaee4;
+                color:$main;
                 border-radius: 5px;
-                border: 1px solid #0aaee4;
+                border: 1px solid $main;
                 padding: 3px 5px;
                 font-weight: 400;
                 font-size: 16px;
                 font-family: 'HelveticaNeueCyr';
             }
+            .info__off {
+                margin: 10px 0px 0px 10px;
+                cursor: pointer;
+                z-index: 1;
+                position: relative;
+            }
+            .info__about {
+                font-size: 15px;
+                color: #ffffff;
+                font-family: "Helvetica Neue";
+                font-weight: 100;
+                padding: 0px 20px 10px 20px;
+                z-index: 1;
+                position: relative;
+            }
+            .btn {
+                margin: 10px 20px;
             }
         }
     }

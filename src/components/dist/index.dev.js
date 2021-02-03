@@ -33,6 +33,12 @@ Object.defineProperty(exports, "FilmList", {
     return _FilmList.FilmList;
   }
 });
+Object.defineProperty(exports, "Footer", {
+  enumerable: true,
+  get: function get() {
+    return _Footer.Footer;
+  }
+});
 
 var _Navbar = require("./Navbar");
 
@@ -43,5 +49,7 @@ var _Search = require("./Search");
 var _CategoriesList = require("./CategoriesList");
 
 var _FilmList = require("./FilmList");
+
+var _Footer = require("./Footer");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }

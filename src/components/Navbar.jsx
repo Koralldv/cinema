@@ -4,6 +4,23 @@ import { Search } from './Search';
 
 export const Navbar = () => {
     const [search, setSearch] = useState(false);
+
+    const [activeNav, setActiveNav] = React.useState(0);
+
+    let high = React.useRef(null);
+    const handleScroll = () => {
+        high = window.scrollY;
+        if (high > 100) {
+            setActiveNav(!activeNav);
+        } else if (high < 100) {
+            setActiveNav(activeNav);
+        }
+    };
+
+    React.useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+    }, []);
+
     return (
         <div className="container">
             {search === true ? (
@@ -12,7 +29,7 @@ export const Navbar = () => {
                 ''
             )}
 
-            <div className="row navbar">
+            <div className={`${activeNav ? 'row navbar navbarFixed' : 'row navbar'}`}>
                 <a href="" className="brand">
                     Movie
                 </a>

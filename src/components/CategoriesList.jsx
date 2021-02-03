@@ -2,6 +2,13 @@ import React from 'react';
 
 export const CategoriesList = ({ categoriesList, soloFilmSet }) => {
     const [categories, setCatagories] = React.useState(0);
+    const [activeSize, setActiveSize] = React.useState(2);
+
+    const handleSoloFilmSet = (i, size) => {
+        soloFilmSet(i);
+        setActiveSize(size);
+    };
+
     return (
         <div className="categoriesBlock">
             <ul className="categList">
@@ -19,8 +26,16 @@ export const CategoriesList = ({ categoriesList, soloFilmSet }) => {
                 })}
             </ul>
             <div className="tabsList">
-                <span onClick={() => soloFilmSet(false)}>4</span>
-                <span onClick={() => soloFilmSet(true)}>2</span>
+                <span
+                    className={activeSize === 2 ? 'activeSize' : ''}
+                    onClick={() => handleSoloFilmSet(false, 2)}>
+                    4
+                </span>
+                <span
+                    className={activeSize === 4 ? 'activeSize' : ''}
+                    onClick={() => handleSoloFilmSet(true, 4)}>
+                    2
+                </span>
             </div>
         </div>
     );
