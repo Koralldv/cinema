@@ -5,27 +5,27 @@
     box-shadow: 0px 0px 100px 43px rgba(34, 60, 80, 0.62) inset;
     .headerInner {
         width: 100%;
+        // background-color: red;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 280px 20px;
         display: flex;
         flex-direction: row;
         justify-items: flex-end;
         justify-content: space-between;
-        height: 200px;
         .infoFilm {
-            position: absolute;
             height: 200px;
             display: block !important;
-            bottom: -10px;
-            left: 10%;
             h2 {
                 font-family: 'Helvetica Neue';
-                font-size: 60px;
+                font-size: 120px;
                 color: #fff;
                 font-weight: 700;
                 text-transform: uppercase;
             }
             .typeFilm{
                 font-family: 'HelveticaNeueCyr';
-                font-size: 20px;
+                font-size: 30px;
                 color: #fff;
                 font-weight: 300;
                 margin: 10px 0px;
@@ -45,7 +45,7 @@
             }
             .rateFilm {
                 font-family: 'HelveticaNeueCyr';
-                font-size: 18px;
+                font-size: 25px;
                 color: #fff;
                 font-weight: 300;
                 border: 2px solid $main;
@@ -68,3 +68,57 @@
     }
 }
 
+@media (max-width: 768px) {
+   .header {
+       .headerInner {
+           padding: 20px 20px;
+           .infoFilm {
+                padding: 200px 20px;
+               h2 {
+                    font-size: 70px;
+               }
+
+               .typeFilm {
+                   font-size: 20px;
+               }
+
+               .rateFilm {
+                   font-size: 16px;
+               }
+           }
+       }
+   }
+}
+
+@media (max-width: 532px) {
+    .header {
+        .headerInner {
+            padding: 20px 20px;
+
+            .infoFilm {
+                padding: 150px 20px 20px 20px;
+                width: 300px;
+                h2 {
+                    font-size: 60px;
+                }
+
+                .typeFilm {
+                    font-size: 16px;
+                }
+
+                .rateFilm {
+                    font-size: 14px;
+                }
+            }
+            .navBut {
+                position: absolute;
+                height: 50px;
+                display: block !important;
+                bottom: 100px;
+                left: 20px;
+                top: auto;
+                right: auto;
+            }
+        }
+    }
+}

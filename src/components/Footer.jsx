@@ -20,19 +20,29 @@ export const Footer = () => {
                     </div>
                     <div className="col">
                         <ul className="social">
-                            <a href="#" className="social_item">
+                            <a
+                                href="https://www.youtube.com/watch?v=RPgmGtCQCzU"
+                                className="social_item">
                                 <FaFacebookF size="25px" />
                             </a>
-                            <a href="#" className="social_item">
+                            <a
+                                href="https://www.youtube.com/watch?v=RPgmGtCQCzU"
+                                className="social_item">
                                 <FaTwitter size="25px" />
                             </a>
-                            <a href="#" className="social_item">
+                            <a
+                                href="https://www.youtube.com/watch?v=RPgmGtCQCzU"
+                                className="social_item">
                                 <FaPinterestP size="25px" />
                             </a>
-                            <a href="#" className="social_item">
+                            <a
+                                href="https://www.youtube.com/watch?v=RPgmGtCQCzU"
+                                className="social_item">
                                 <AiFillInstagram size="25px" />
                             </a>
-                            <a href="#" className="social_item">
+                            <a
+                                href="https://www.youtube.com/watch?v=RPgmGtCQCzU"
+                                className="social_item">
                                 <FaYoutube size="25px" />
                             </a>
                         </ul>

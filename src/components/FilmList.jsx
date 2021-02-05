@@ -14,7 +14,10 @@ export const FilmList = ({ filmList, solo }) => {
         <div className="row filmList">
             {filmList.map((item, index) => {
                 return (
-                    <div className="filmItem col-3" style={solo} key={`${item}_${index}`}>
+                    <div
+                        className="filmItem col-xl-3 col-md-4 col-md-6 col-sm-12 col-xs-12"
+                        style={solo}
+                        key={`${item}_${index}`}>
                         <div
                             className="filmItemInner"
                             style={

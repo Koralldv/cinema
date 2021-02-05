@@ -1,5 +1,6 @@
 .bg {
     background-color: #f5f6f6;
+    padding: 0px 20px;
 }
 .categoriesList { 
     margin: 0px auto;
@@ -9,8 +10,11 @@
     .categoriesBlock {
         display: flex;
         justify-content: space-between;
+        justify-items: flex-start;
+        border-bottom: 3px solid #e0e1e2;
         .categList {
-            width: 660px;
+            max-width: 750px;
+            width: 100%;
             display: flex;
             justify-content: space-between;
             justify-items: center;
@@ -19,16 +23,32 @@
                 font-family: 'HelveticaNeueCyr';
                 color: $main;
                 cursor: pointer;
+                font-weight: 400;
+                position: relative;
+            }
+            .categItemGroup{
+                font-family: 'HelveticaNeueCyr';
+                color: $main;
+                cursor: pointer;
+                font-weight: 400;
+                position: relative;
+            }
+
+            .categItem:hover{
+                transform: scale(1.05);
+                transition: transform .3s;
             }
 
             .categItem-Active {
-                font-family: 'Helvetica Neue';
+                transform: scale(1.05);
+                transition: transform .3s;
                 border-bottom: 3px solid $main;
-                padding-bottom: 10px;
+                margin-bottom: -2px;
             }
         }
         .tabsList {
             display: flex;
+            padding-bottom: 10px;
             span {
                 color: $main;
                 font-family: 'HelveticaNeueCyr';
@@ -39,7 +59,7 @@
                 flex-direction: row;
                 justify-content: center;
                 justify-items: center;                                                         
-                margin: 5px;
+                margin: 0px 5px;
                 padding-top: 3px;
                 border: 2px solid $main;
                 border-radius: 50%; 
@@ -57,4 +77,46 @@
             }
         }
     }
+}
+
+.arrowCat {
+    position: absolute;
+    right: 0px;
+}
+
+.arrowCat__rotate {
+    position: absolute;
+    right: 0px;
+    transform: rotate(180deg);
+    transition: .3s;
+}
+
+.select {
+    position: relative;
+    width: 100px;
+}
+
+.selectThumb {
+    position: absolute;
+    z-index: 9999999 !important;
+    background-color: #fff;
+    padding: 10px;
+    border: 2px solid $main;
+    border-radius: 8px;
+    top: 30px;
+}
+
+.thumb__item {
+    padding: 3px 2px;
+    transition: .2s;
+}
+
+.thumb__item:hover {
+    background-color: $main;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.categItemGroup {
+    // background-color: red;
 }

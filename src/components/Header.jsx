@@ -23,10 +23,10 @@ function Header({ announc }) {
                 slidesPerView={1}
                 direction="vertical"
                 className="swiper"
-                autoplay={{
-                    delay: 1500,
-                    disableOnInteraction: true,
-                }}
+                // autoplay={{
+                //     delay: 1500,
+                //     disableOnInteraction: true,
+                // }}
                 pagination={{ clickable: true }}>
                 {announc.map((item, index) => {
                     return (
@@ -48,27 +48,27 @@ function Header({ announc }) {
                                         <MdStar
                                             className="headerStar"
                                             color="#a69df5"
-                                            fontSize="36px"
+                                            fontSize="45px"
                                         />
                                         <MdStar
                                             className="headerStar"
                                             color="#a69df5"
-                                            fontSize="36px"
+                                            fontSize="45px"
                                         />
                                         <MdStar
                                             className="headerStar"
                                             color="#a69df5"
-                                            fontSize="36px"
+                                            fontSize="45px"
                                         />
                                         <MdStar
                                             className="headerStar"
                                             color="#a69df5"
-                                            fontSize="36px"
+                                            fontSize="45px"
                                         />
                                         <MdStar
                                             className="headerStar"
                                             color="#a69df5"
-                                            fontSize="36px"
+                                            fontSize="45px"
                                         />
                                         <span className="rateFilm">{item.stars}</span>
                                     </div>
