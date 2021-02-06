@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Header, CategoriesList, FilmList, Footer } from '../components/';
+import { Header, CategoriesList, Films, Footer } from '../components/';
 
 const announc = [
     {
@@ -215,7 +215,7 @@ export const Home = () => {
             <div className="bg">
                 <div className="categoriesList container">
                     <CategoriesList categoriesList={categoriesList} soloFilmSet={soloFilmSet} />
-                    <FilmList filmList={filmList} solo={soloFilm === true ? solo : all} />
+                    <Films filmList={filmList} solo={soloFilm === true ? solo : all} />
                 </div>
             </div>
             <Footer />

@@ -27,10 +27,16 @@ Object.defineProperty(exports, "CategoriesList", {
     return _CategoriesList.CategoriesList;
   }
 });
-Object.defineProperty(exports, "FilmList", {
+Object.defineProperty(exports, "ListItems", {
   enumerable: true,
   get: function get() {
-    return _FilmList.FilmList;
+    return _ListItems.ListItems;
+  }
+});
+Object.defineProperty(exports, "Films", {
+  enumerable: true,
+  get: function get() {
+    return _Films.Films;
   }
 });
 Object.defineProperty(exports, "Footer", {
@@ -46,9 +52,11 @@ var _Header = _interopRequireDefault(require("./Header"));
 
 var _Search = require("./Search");
 
-var _CategoriesList = require("./CategoriesList");
+var _CategoriesList = require("./Categories/CategoriesList");
 
-var _FilmList = require("./FilmList");
+var _ListItems = require("./Categories/ListItems");
+
+var _Films = require("./Films/Films");
 
 var _Footer = require("./Footer");
 
