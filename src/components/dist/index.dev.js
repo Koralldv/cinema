@@ -45,6 +45,12 @@ Object.defineProperty(exports, "Subscription", {
     return _Subscription.Subscription;
   }
 });
+Object.defineProperty(exports, "FreeAd", {
+  enumerable: true,
+  get: function get() {
+    return _FreeAd.FreeAd;
+  }
+});
 Object.defineProperty(exports, "Footer", {
   enumerable: true,
   get: function get() {
@@ -65,6 +71,8 @@ var _ListItems = require("./Categories/ListItems");
 var _Films = require("./Films/Films");
 
 var _Subscription = require("./Subscription/Subscription");
+
+var _FreeAd = require("./FreeAd");
 
 var _Footer = require("./Footer");
 

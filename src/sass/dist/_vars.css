@@ -1,3 +1,8 @@
-.linkSub {
+a {
   text-decoration: none;
+}
+
+.closeAdd {
+  font-size: 10px;
+  color: #fff;
 }

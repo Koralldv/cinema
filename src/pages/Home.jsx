@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Header, CategoriesList, Films, Subscription } from '../components/';
+import { Header, CategoriesList, Films, Subscription, FreeAd } from '../components/';
 
 const announc = [
     {
@@ -236,6 +236,12 @@ const all = {};
 
 export const Home = () => {
     const [soloFilm, soloFilmSet] = React.useState(false);
+    const [addOff, addOffSet] = React.useState(true);
+
+    const handleAddOffSet = () => {
+        addOffSet(!addOff);
+    };
+
     return (
         <React.Fragment>
             <Header announc={announc}></Header>
@@ -243,6 +249,7 @@ export const Home = () => {
                 <div className="categoriesList container">
                     <CategoriesList categoriesList={categoriesList} soloFilmSet={soloFilmSet} />
                     <Films filmList={filmList} solo={soloFilm === true ? solo : all} />
+                    {addOff === true ? <FreeAd click={() => handleAddOffSet()} /> : ''}
                     <Subscription subscribe={subscribe} />
                 </div>
             </div>
