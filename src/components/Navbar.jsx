@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import MdSearch from 'react-ionicons/lib/MdSearch';
+import { Link } from 'react-router-dom';
+
 import { Search } from './Search';
 
 export const Navbar = () => {
@@ -30,9 +32,9 @@ export const Navbar = () => {
             )}
 
             <div className={`${activeNav ? 'row navbar navbarFixed' : 'row navbar'}`}>
-                <a href="" className="brand">
+                <Link to="/" className="brand">
                     Movie
-                </a>
+                </Link>
                 <div className="navBut">
                     <button className="btn btn-search" onClick={() => setSearch(true)}>
                         <MdSearch className="btn-search-icon" color="#fff" />

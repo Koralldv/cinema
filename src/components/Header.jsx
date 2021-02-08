@@ -9,15 +9,12 @@ import MdStar from 'react-ionicons/lib/MdStar';
 import 'swiper/swiper.scss';
 import 'swiper/components/pagination/pagination.scss';
 
-import { Navbar } from './Navbar';
-
 SwiperCore.use([Pagination]);
 SwiperCore.use([Autoplay]);
 
 function Header({ announc }) {
     return (
         <div>
-            <Navbar />
             <Swiper
                 spaceBetween={0}
                 slidesPerView={1}

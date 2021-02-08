@@ -218,7 +218,6 @@ export const Home = () => {
                     <Films filmList={filmList} solo={soloFilm === true ? solo : all} />
                 </div>
             </div>
-            <Footer />
         </React.Fragment>
     );
 };

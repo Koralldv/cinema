@@ -5,7 +5,6 @@ import { FilmsInfo } from './FilmsInfo';
 import MdPlay from 'react-ionicons/lib/MdPlay';
 
 export const FilmsList = ({ item_filmList, index, solo }) => {
-    console.log(item_filmList);
     const [info, setInfo] = useState(null);
 
     const clickInfo = (index) => {

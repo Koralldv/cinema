@@ -2,15 +2,23 @@ import React from 'react';
 import { FaFacebookF, FaTwitter, FaPinterestP, FaYoutube } from 'react-icons/fa';
 import { AiFillInstagram } from 'react-icons/ai';
 
+import { Link } from 'react-router-dom';
+
 export const Footer = () => {
     return (
         <React.Fragment>
             <div className="footer container-fluid">
                 <div className="row">
                     <ul className="footerMenu col">
-                        <li className="footerMenu__item">About</li>
-                        <li className="footerMenu__item">Terms of Service</li>
-                        <li className="footerMenu__item">Contact</li>
+                        <li className="footerMenu__item">
+                            <Link to="/about">About</Link>
+                        </li>
+                        <li className="footerMenu__item">
+                            <Link to="/">Terms of Service</Link>
+                        </li>
+                        <li className="footerMenu__item">
+                            <Link to="/">Contact</Link>
+                        </li>
                     </ul>
                     <div className="Finfo col">
                         <span className="info__logo">Movie</span>
