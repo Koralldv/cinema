@@ -4,21 +4,21 @@ import styled, { css } from 'styled-components';
 export const AboutHeader = () => {
     return (
         <About>
-            <Title>О нас</Title>
+            <Title>About us</Title>
             <AfterTitle>
-                Okko — один из самых больших легальных онлайн-кинотеатров в России, мы успешно
-                работаем с 2011 года.
+                MOVIE is one of the largest legal online cinemas in Russia, we have been
+                successfully operating since 2011.
             </AfterTitle>
             <Text>
-                В нашем каталоге представлено 60 000 фильмов, мультфильмов и сериалов. С момента
-                запуска сервис посетили более 20 млн пользователей. Ежемесячная аудитория составляет
-                2,8 млн человек.
+                Our catalog contains 60,000 films, cartoons and serials. From the moment the launch
+                of the service was visited by over 20 million users. The monthly audience is 2.8
+                million people.
             </Text>
             <Text>
-                Okko доступен на большинстве телевизоров с функцией Smart TV (Samsung, Sony, LG,
-                Philips, Panasonic и другие популярные модели), на игровых консолях (PlayStation 3 и
-                PlayStation 4) и на мобильных устройствах (Android и iOS). Загружайте фильмы и
-                сериалы на мобильные устройства и смотрите в любой точке мира даже без интернета.
+                MOVIE is available on most smart TVs (Samsung, Sony, LG, Philips, Panasonic and
+                other popular models), on game consoles (PlayStation 3 and PlayStation 4) and mobile
+                devices (Android and iOS). Download movies and TV shows on mobile devices and watch
+                anywhere in the world, even without the Internet.
             </Text>
         </About>
     );
@@ -30,14 +30,15 @@ const About = styled.div`
     max-width: 850px;
 `;
 
-const Title = styled.h2`
+export const Title = styled.h2`
     font-size: 40px;
     line-height: 50px;
     font-family: Helvetica Neue;
     margin-bottom: 2px;
+    margin-top: 100px;
 `;
 
-const AfterTitle = styled.h3`
+export const AfterTitle = styled.h3`
     font-size: 20px;
     line-height: 31px;
     font-family: Helvetica Neue;

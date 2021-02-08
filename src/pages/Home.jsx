@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Header, CategoriesList, Films, Footer } from '../components/';
+import { Header, CategoriesList, Films, Subscription } from '../components/';
 
 const announc = [
     {
@@ -200,6 +200,33 @@ const filmList = [
     },
 ];
 
+const subscribe = [
+    {
+        id: 1,
+        title: 'LITE',
+        img: 'https://cdn.pixabay.com/photo/2017/11/03/22/59/off-road-2915957_1280.jpg',
+        description: 'There are growing dangers here are growing dangers.',
+        sale: 'First 7 days free',
+        price: 10,
+    },
+    {
+        id: 2,
+        title: 'OPTIUS',
+        img: 'https://cdn.pixabay.com/photo/2017/11/03/22/59/off-road-2915957_1280.jpg',
+        description: 'There are growing dangers here are growing dangers.',
+        sale: 'First 7 days free',
+        price: 15,
+    },
+    {
+        id: 3,
+        title: 'PREMIUM',
+        img: 'https://cdn.pixabay.com/photo/2017/11/03/22/59/off-road-2915957_1280.jpg',
+        description: 'There are growing dangers here are growing dangers.',
+        sale: 'First 7 days free',
+        price: 13,
+    },
+];
+
 const solo = {
     flex: '0 0 100%',
     maxWidth: '50%',
@@ -216,6 +243,7 @@ export const Home = () => {
                 <div className="categoriesList container">
                     <CategoriesList categoriesList={categoriesList} soloFilmSet={soloFilmSet} />
                     <Films filmList={filmList} solo={soloFilm === true ? solo : all} />
+                    <Subscription subscribe={subscribe} />
                 </div>
             </div>
         </React.Fragment>
