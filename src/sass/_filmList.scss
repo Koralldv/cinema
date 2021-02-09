@@ -1,11 +1,7 @@
 .filmList {
-    // width: 100%;
-    // padding: 20px;
-    // background-color: red;
     .filmItem {
-        // margin: 0 10px;
         .filmItemInner{
-            height: 300px;
+            height: 400px;
             margin: 25px 0px;
             box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.04);
             border-radius: 5px;
@@ -15,7 +11,7 @@
             position: relative;
             .filmItemInner___bg {
                 position: absolute;
-                background-color: rgba(0, 0, 0, 0.25);
+                background-color: rgba(0, 0, 0, .6);
                 z-index: 0;
                 left: 0;
                 right: 0;
@@ -25,12 +21,12 @@
             .filmItemTop {
                 position: relative;
                 width: 100%;
-                height: 70%;
+                height: 75%;
                 text-align: center;
                 .watch {
                     display: block;
                     position: absolute;
-                    top: 48%;
+                    top: 52%;
                     left: 50%;
                     margin-left: -36px;
                     color: #fff;
@@ -41,7 +37,7 @@
                 .play {
                     margin: 5px auto;
                     position: absolute;
-                    top: 36px;
+                    top: 30%;
                     left: 50%;
                     margin-left: -19px;
                     background-color: $main;
@@ -53,7 +49,7 @@
                 }
                 .btn {
                     position: absolute;
-                    top: 64%;
+                    top: 59%;
                     left: 50%;
                     margin-left: -60px;
                 }
@@ -63,7 +59,7 @@
                     left: 0;
                     right: 0;
                     bottom: 0;
-                    background: rgba(0, 0, 0, .5);
+                    background: rgba(0, 0, 0, .6);
                     opacity: 0;
                     transition: .2s;
                     cursor: pointer;
@@ -100,6 +96,11 @@
                 color: rgb(36, 43, 45);
                 font-weight: bold;
                 text-transform: uppercase;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 70%;
+                display: block;
             }
 
             .span__active {
@@ -117,7 +118,7 @@
 
                 li {
                     margin-right: 10px;
-                    font-size: 14px;
+                    font-size: 16px;
                     font-family: 'HelveticaNeueCyr';
                     font-weight: 500;
                     color: $main;
@@ -128,7 +129,7 @@
                 position: absolute;
                 right: 20px;
                 top: 20px;
-                color:$main;
+                color: $main;
                 border-radius: 5px;
                 border: 1px solid $main;
                 padding: 3px 5px;
@@ -143,16 +144,27 @@
                 position: relative;
             }
             .info__about {
-                font-size: 15px;
+                font-size: 16px;
                 color: #ffffff;
-                font-family: "Helvetica Neue";
+                font-family: "HelveticaNeueCyr";
                 font-weight: 100;
                 padding: 0px 20px 10px 20px;
                 z-index: 1;
                 position: relative;
+                font-weight: 400;
+                line-height: 18px;
+                overflow-y: hidden;
+                text-overflow: ellipsis;
+                display: block;
+                max-height: 196px;
             }
             .btn {
                 margin: 10px 20px;
+            }
+            .btn__pos {
+                position: absolute;
+                bottom: 10px;
+                left: 0px;
             }
         }
     }

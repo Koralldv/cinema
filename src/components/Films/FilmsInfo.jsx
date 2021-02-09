@@ -22,7 +22,7 @@ export const FilmsInfo = ({ item_filmList, info, clickInfo, index }) => {
                         <span className="rating">{item_filmList.rating}</span>
                     </div>
                     <p className="info__about">{item_filmList.description}</p>
-                    <button className="btn btn-col">Wath now</button>
+                    <button className="btn btn-col btn__pos">Wath now</button>
                 </div>
             ) : (
                 ''

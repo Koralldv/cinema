@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import MdClose from 'react-ionicons/lib/MdClose';
 import { Link } from 'react-router-dom';
+import AdImg from '../img/ad.jpg';
 
 export const FreeAd = ({ click }) => {
     return (
@@ -19,6 +20,7 @@ export const FreeAd = ({ click }) => {
             <Link to="/">
                 <FreeButton>Try!</FreeButton>
             </Link>
+            <Freeimg src={AdImg} alt="" />
         </Free>
     );
 };
@@ -31,6 +33,7 @@ const Free = styled.div`
     background-color: #a69df5;
     height: 165px;
     position: relative;
+    margin: 60px auto 0px auto;
 `;
 
 const FreeClose = styled.span`
@@ -78,4 +81,13 @@ const FreeButton = styled.button`
         transform: scale(1.1);
         transition: transform 0.3s;
     }
+`;
+
+const Freeimg = styled.img`
+    display: block;
+    width: container;
+    height: inherit;
+    position: absolute;
+    right: 15%;
+    top: 0px;
 `;

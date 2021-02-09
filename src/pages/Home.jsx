@@ -102,16 +102,16 @@ const filmList = [
     {
         id: 123,
         title: 'AssAssin’s Creed',
-        img: 'https://cdn.pixabay.com/photo/2017/11/03/22/59/off-road-2915957_1280.jpg',
+        img: 'https://pbs.twimg.com/media/DjVOjlaXcAA9MiY.jpg',
         rating: 4.2,
         categories: ['Adventure', 'Drama', 'Family'],
         description:
-            'There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers.',
+            'There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers. Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers. Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers.',
     },
     {
         id: 123,
         title: 'Now you see me 2',
-        img: 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg',
+        img: 'https://i.pinimg.com/originals/3a/5c/f3/3a5cf329951831a3c8774623a184becc.jpg',
         rating: 4.2,
         categories: ['Adventure', 'Drama', 'Family'],
         description:
@@ -119,17 +119,8 @@ const filmList = [
     },
     {
         id: 123,
-        title: 'The Legend of Ta...',
-        img: 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg',
-        rating: 4.2,
-        categories: ['Adventure', 'Drama', 'Family'],
-        description:
-            'There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers.',
-    },
-    {
-        id: 123,
-        title: 'Title',
-        img: 'https://cdn.pixabay.com/photo/2017/11/03/22/59/off-road-2915957_1280.jpg',
+        title: 'The Legend of Tawefwefwe',
+        img: 'https://img-fotki.yandex.ru/get/54004/39219794.13/0_17da10_39ae73ce_XL',
         rating: 4.2,
         categories: ['Adventure', 'Drama', 'Family'],
         description:
@@ -138,7 +129,7 @@ const filmList = [
     {
         id: 123,
         title: 'Title',
-        img: 'https://cdn.pixabay.com/photo/2017/11/03/22/59/off-road-2915957_1280.jpg',
+        img: 'https://posters.clan.su/_nw/5/65555786.jpg',
         rating: 4.2,
         categories: ['Adventure', 'Drama', 'Family'],
         description:
@@ -147,7 +138,7 @@ const filmList = [
     {
         id: 123,
         title: 'Title',
-        img: 'https://cdn.pixabay.com/photo/2017/11/03/22/59/off-road-2915957_1280.jpg',
+        img: 'https://voron-kino.ucoz.ru/img/poster/voron-kino.ucoz.ru-The-Raven-1797825.jpg',
         rating: 4.2,
         categories: ['Adventure', 'Drama', 'Family'],
         description:
@@ -156,7 +147,7 @@ const filmList = [
     {
         id: 123,
         title: 'Title',
-        img: 'https://cdn.pixabay.com/photo/2017/11/03/22/59/off-road-2915957_1280.jpg',
+        img: 'https://simg.sputnik.ru/?key=c5edd5359e4750d8c1196525fd454c2a33aa2dc6',
         rating: 4.2,
         categories: ['Adventure', 'Drama', 'Family'],
         description:
@@ -165,7 +156,7 @@ const filmList = [
     {
         id: 123,
         title: 'Title',
-        img: 'https://cdn.pixabay.com/photo/2017/11/03/22/59/off-road-2915957_1280.jpg',
+        img: 'https://i.imgur.com/36rQDeN.jpeg',
         rating: 4.2,
         categories: ['Adventure', 'Drama', 'Family'],
         description:
@@ -174,7 +165,7 @@ const filmList = [
     {
         id: 123,
         title: 'Title',
-        img: 'https://cdn.pixabay.com/photo/2017/11/03/22/59/off-road-2915957_1280.jpg',
+        img: 'https://pbs.twimg.com/media/DqF8xWQW4AAR0-s.jpg',
         rating: 4.2,
         categories: ['Adventure', 'Drama', 'Family'],
         description:
@@ -183,7 +174,7 @@ const filmList = [
     {
         id: 123,
         title: 'Title',
-        img: 'https://cdn.pixabay.com/photo/2017/11/03/22/59/off-road-2915957_1280.jpg',
+        img: 'https://cs8.pikabu.ru/post_img/2016/04/13/10/1460564065150713732.jpg',
         rating: 4.2,
         categories: ['Adventure', 'Drama', 'Family'],
         description:
@@ -192,7 +183,17 @@ const filmList = [
     {
         id: 123,
         title: 'Title',
-        img: 'https://cdn.pixabay.com/photo/2017/11/03/22/59/off-road-2915957_1280.jpg',
+        img: 'https://posters.clan.su/_nw/5/64843315.jpg',
+        rating: 4.2,
+        categories: ['Adventure', 'Drama', 'Family'],
+        description:
+            'There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers.',
+    },
+    {
+        id: 123,
+        title: 'Title',
+        img:
+            'https://static.kinoafisha.info/k/movie_posters/canvas/800x1200/upload/movie_posters/1/6/8/8124861/8b44f3c18ef5d7ff9474cdf13d928c1e.jpg',
         rating: 4.2,
         categories: ['Adventure', 'Drama', 'Family'],
         description:
