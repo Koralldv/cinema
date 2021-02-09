@@ -14,13 +14,21 @@ export const Subscription = ({ subscribe }) => {
                 educational animated series in Full HD.
             </AfterTitle>
             <Subscribe>
-                {subscribe.map((item, index) => {
-                    {
-                        return (
-                            <SubscriptionItem item={item} index={index} key={`${item}_${index}`} />
-                        );
-                    }
-                })}
+                <div className="row">
+                    {subscribe.map((item, index) => {
+                        {
+                            return (
+                                <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                                    <SubscriptionItem
+                                        item={item}
+                                        index={index}
+                                        key={`${item}_${index}`}
+                                    />
+                                </div>
+                            );
+                        }
+                    })}
+                </div>
             </Subscribe>
         </>
     );

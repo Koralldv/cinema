@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 
 import { Link } from 'react-router-dom';
+import Sub from '../../img/sub1.png';
 
 export const SubscriptionItem = ({ item, index }) => {
     return (
@@ -9,7 +10,7 @@ export const SubscriptionItem = ({ item, index }) => {
             <SubscribeItem>
                 <Link className="linkSub" to={`${index}`}>
                     <SubscribeItemInfo>
-                        <SubscribeItemImg src={item.img}></SubscribeItemImg>
+                        <SubscribeItemImg src={Sub}></SubscribeItemImg>
                         <SubscribeItemTitle>{item.title}</SubscribeItemTitle>
                         <SubscribeItemText>{item.description}</SubscribeItemText>
                         {item.sale ? <SubscribeItemSale>{item.sale}</SubscribeItemSale> : ''}
@@ -23,10 +24,10 @@ export const SubscriptionItem = ({ item, index }) => {
 };
 
 const SubscribeItem = styled.div`
-    width: 31%;
     height: 600px;
     border-radius: 8px;
-    // background: linear-gradient(-26deg, rgba(140, 132, 147, 0.5), rgba(255, 255, 255, 0.25));
+    margin-bottom: 30px;
+    // background: linear-gradient(-26deg, #12051e, red);
     overflow: hidden;
     background-color: #ffffff;
     box-shadow: 0px 10px 40px 0px rgb(0 0 0 / 4%);
@@ -54,32 +55,33 @@ const SubscribeItemTitle = styled.h2`
     font-family: 'Helvetica Neue';
     color: #242b2d;
     text-transform: uppercase;
-    padding: 15px 0px;
+    padding: 15px 0px 0px 0px;
 `;
 
 const SubscribeItemText = styled.p`
     text-align: center;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 24px;
     font-family: 'HelveticaNeueCyr';
     font-weight: 300;
     margin-top: 20px;
     color: #242b2d;
+    padding: 10px 20px;
 }
 `;
 
 const SubscribeItemSale = styled.p`
     text-align: center;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 18px;
     font-family: 'HelveticaNeueCyr';
-    font-weight: 300;
+    font-weight: 500;
     color: #ffffff;
     background-color: #e40454;
     border-radius: 3px;
-    width: 70%;
+    width: 60%;
     margin: 20px auto;
-    padding: 2px;
+    padding: 5px 10px;
+    text-transform: uppercase;
 }
 `;
 
@@ -89,7 +91,7 @@ const SubscribeItemPrice = styled.span`
     font-family: 'Helvetica Neue';
     margin-top: 20px;
     color: #a69df5;
-    margin: 20px auto;
+    margin: 60px auto 20px auto;
     widtht: 100px;
     display: block;
 }
@@ -100,13 +102,13 @@ const SubscribeItemButton = styled.button`
     border: 0px;
     border-radius: 6px;
     padding: 12px 30px;
-    margin: 5px 5px;
     background-color: transparent;
+    font-size: 20px;
     font-family: HelveticaNeueCyr;
     cursor: pointer;
     position: relative;
     background-color: #a69df5;
-    margin: 20px auto;
+    margin: 20px auto 20px auto;
     display: block;
     subscribeitembutton: hover;
      &:hover {

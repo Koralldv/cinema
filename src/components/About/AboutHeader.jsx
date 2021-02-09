@@ -36,6 +36,12 @@ export const Title = styled.h2`
     font-family: Helvetica Neue;
     margin-bottom: 2px;
     margin-top: 100px;
+    color: #12051e;
+    ${(props) =>
+        props.white &&
+        css`
+            color: #ffffff;
+        `}
 `;
 
 export const AfterTitle = styled.h3`
@@ -43,6 +49,11 @@ export const AfterTitle = styled.h3`
     line-height: 31px;
     font-family: Helvetica Neue;
     margin-bottom: 20px;
+    ${(props) =>
+        props.white &&
+        css`
+            color: #ffffff;
+        `}
 `;
 
 const Text = styled.p`

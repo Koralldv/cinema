@@ -34,6 +34,9 @@ const Free = styled.div`
     height: 165px;
     position: relative;
     margin: 60px auto 0px auto;
+    @media (max-width: 768px) {
+        height: 200px;
+    } ;
 `;
 
 const FreeClose = styled.span`
@@ -90,4 +93,7 @@ const Freeimg = styled.img`
     position: absolute;
     right: 15%;
     top: 0px;
+    @media (max-width: 768px) {
+        display: none;
+    } ;
 `;
