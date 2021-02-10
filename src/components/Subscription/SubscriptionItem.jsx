@@ -1,25 +1,23 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 import { Link } from 'react-router-dom';
 import Sub from '../../img/sub1.png';
 
 export const SubscriptionItem = ({ item, index }) => {
     return (
-        <>
-            <SubscribeItem>
-                <Link className="linkSub" to={`${index}`}>
-                    <SubscribeItemInfo>
-                        <SubscribeItemImg src={Sub}></SubscribeItemImg>
-                        <SubscribeItemTitle>{item.title}</SubscribeItemTitle>
-                        <SubscribeItemText>{item.description}</SubscribeItemText>
-                        {item.sale ? <SubscribeItemSale>{item.sale}</SubscribeItemSale> : ''}
-                        <SubscribeItemPrice>{`$${item.price}/month`}</SubscribeItemPrice>
-                        <SubscribeItemButton>Subscribe</SubscribeItemButton>
-                    </SubscribeItemInfo>
-                </Link>
-            </SubscribeItem>
-        </>
+        <SubscribeItem key={`${item}_${index}`}>
+            <Link className="linkSub" to={`/subscribe/${item.title}`}>
+                <SubscribeItemInfo>
+                    <SubscribeItemImg src={Sub}></SubscribeItemImg>
+                    <SubscribeItemTitle>{item.title}</SubscribeItemTitle>
+                    <SubscribeItemText>{item.description}</SubscribeItemText>
+                    {item.sale ? <SubscribeItemSale>{item.sale}</SubscribeItemSale> : ''}
+                    <SubscribeItemPrice>{`$${item.price}/month`}</SubscribeItemPrice>
+                    <SubscribeItemButton>Subscribe</SubscribeItemButton>
+                </SubscribeItemInfo>
+            </Link>
+        </SubscribeItem>
     );
 };
 

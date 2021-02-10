@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import MdClose from 'react-ionicons/lib/MdClose';
 import { Link } from 'react-router-dom';
 import AdImg from '../img/ad.jpg';
@@ -17,7 +17,7 @@ export const FreeAd = ({ click }) => {
             </FreeClose>
             <FreeTitle>First 14 days for $0.1</FreeTitle>
             <FreeATitleAfter>Subscribe for new users</FreeATitleAfter>
-            <Link to="/">
+            <Link to="/subscribe">
                 <FreeButton>Try!</FreeButton>
             </Link>
             <Freeimg src={AdImg} alt="" />

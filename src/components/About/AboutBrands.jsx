@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import WB from '../../img/wb.png';
 
 const brands = [WB, WB, WB, WB, WB, WB, WB, WB, WB];

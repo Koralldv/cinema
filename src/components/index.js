@@ -7,3 +7,5 @@ export { Films } from './Films/Films'
 export { Subscription } from './Subscription/Subscription'
 export { FreeAd } from './FreeAd'
 export { Footer } from './Footer'
+
+export { SubSelect } from './Subscribe/'

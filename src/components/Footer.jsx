@@ -14,7 +14,7 @@ export const Footer = () => {
                             <Link to="/about">About</Link>
                         </li>
                         <li className="footerMenu__item">
-                            <Link to="/">Terms of Service</Link>
+                            <Link to="/subscribe">Subscribe</Link>
                         </li>
                         <li className="footerMenu__item">
                             <Link to="/">Contact</Link>

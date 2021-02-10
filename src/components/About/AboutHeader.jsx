@@ -35,7 +35,7 @@ export const Title = styled.h2`
     line-height: 50px;
     font-family: Helvetica Neue;
     margin-bottom: 2px;
-    margin-top: 100px;
+    padding-top: 100px;
     color: #12051e;
     ${(props) =>
         props.white &&

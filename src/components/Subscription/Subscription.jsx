@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 import { SubscriptionItem } from './SubscriptionItem';
 import { Title, AfterTitle } from '../About/AboutHeader';
@@ -16,17 +16,13 @@ export const Subscription = ({ subscribe }) => {
             <Subscribe>
                 <div className="row">
                     {subscribe.map((item, index) => {
-                        {
-                            return (
-                                <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-                                    <SubscriptionItem
-                                        item={item}
-                                        index={index}
-                                        key={`${item}_${index}`}
-                                    />
-                                </div>
-                            );
-                        }
+                        return (
+                            <div
+                                className="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4"
+                                key={`${item}_${index}`}>
+                                <SubscriptionItem item={item} index={index} />
+                            </div>
+                        );
                     })}
                 </div>
             </Subscribe>

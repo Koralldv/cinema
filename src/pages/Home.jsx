@@ -201,33 +201,6 @@ const filmList = [
     },
 ];
 
-const subscribe = [
-    {
-        id: 1,
-        title: 'LITE',
-        img: 'https://cdn.pixabay.com/photo/2017/11/03/22/59/off-road-2915957_1280.jpg',
-        description: 'Domestic films and TV series, as well as world classics',
-        sale: 'First 14 days free',
-        price: 10,
-    },
-    {
-        id: 2,
-        title: 'OPTIMUM',
-        img: 'https://cdn.pixabay.com/photo/2017/11/03/22/59/off-road-2915957_1280.jpg',
-        description: '"Light" + more foreign films and TV series and Netflix',
-        sale: 'First 7 days free',
-        price: 15,
-    },
-    {
-        id: 3,
-        title: 'PREMIUM',
-        img: 'https://cdn.pixabay.com/photo/2017/11/03/22/59/off-road-2915957_1280.jpg',
-        description: '"Optimum"+ films and series Start, Netflix and Amediateka',
-        sale: 'Exclusives as a gift',
-        price: 20,
-    },
-];
-
 const solo = {
     flex: '0 0 100%',
     maxWidth: '50%',
@@ -235,7 +208,7 @@ const solo = {
 
 const all = {};
 
-export const Home = () => {
+export const Home = ({ subscribe }) => {
     const [soloFilm, soloFilmSet] = React.useState(false);
     const [addOff, addOffSet] = React.useState(true);
 

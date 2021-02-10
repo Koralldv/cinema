@@ -15,7 +15,23 @@ Object.defineProperty(exports, "About", {
     return _About.About;
   }
 });
+Object.defineProperty(exports, "Subscribe", {
+  enumerable: true,
+  get: function get() {
+    return _Subscribe.Subscribe;
+  }
+});
+Object.defineProperty(exports, "SubscribeSingle", {
+  enumerable: true,
+  get: function get() {
+    return _SubscribeSingle.SubscribeSingle;
+  }
+});
 
 var _Home = require("./Home");
 
 var _About = require("./About");
+
+var _Subscribe = require("./Subscribe");
+
+var _SubscribeSingle = require("./SubscribeSingle");

@@ -1,7 +1,7 @@
 import React from 'react';
 import { AboutHeader, AboutBrands } from '../components/About';
 
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 export const About = () => {
     return (
@@ -14,12 +14,12 @@ export const About = () => {
     );
 };
 
-const Bg = styled.div`
+export const Bg = styled.div`
     background-color: #f5f6f6;
     border-top: 90px solid #070707;
 `;
 
-const Layout = styled.div`
+export const Layout = styled.div`
     width: 100%;
     max-width: 1200px;
     margin: 0px auto;
